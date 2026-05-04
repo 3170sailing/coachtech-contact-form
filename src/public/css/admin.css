@@ -1,0 +1,96 @@
+.admin__content {
+    max-width: 1000px;
+    margin: 60px auto;
+    padding: 40px 30px;
+    background: #fff;
+    border-radius: 4px;
+}
+
+.admin__heading {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.admin__heading h2 {
+    font-size: 24px;
+}
+
+/* 検索フォーム */
+.search-form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 30px;
+}
+
+.search-form__item {
+    flex: 1;
+}
+
+.search-form__item input,
+.search-form__item select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+}
+
+.search-form__button {
+    display: flex;
+    gap: 10px;
+}
+
+.search-form__button-submit {
+    padding: 10px 20px;
+    background: #000;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.search-form__button-reset {
+    padding: 10px 20px;
+    background: #ccc;
+    border: none;
+    cursor: pointer;
+}
+
+/* テーブル */
+.admin-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.admin-table th {
+    padding: 12px;
+    background: #000;
+    color: #fff;
+    text-align: left;
+}
+
+.admin-table td {
+    padding: 12px;
+    border-bottom: 1px solid #ddd;
+}
+
+/* ボタン */
+.admin-table__button {
+    padding: 6px 12px;
+    border: none;
+    cursor: pointer;
+}
+
+.admin-table__button--delete {
+    background: #ff0000;
+    color: #fff;
+}
+
+.admin-table__button:hover {
+    opacity: 0.8;
+}
+
+/* ページネーション */
+.pagination {
+    margin-top: 30px;
+    text-align: center;
+}

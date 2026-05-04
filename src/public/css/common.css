@@ -1,0 +1,22 @@
+.header {
+    background: #fff;
+    border-bottom: 1px solid #e0dfde;
+}
+
+.header__inner {
+    max-width: 1230px;
+    height: 80px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header__logo {
+    color: #8b7969;
+    font-family: 'Bodoni Moda', serif;
+    font-size: 36px;
+    text-decoration: none;
+    font-family: serif;
+    font-weight: bold;
+}

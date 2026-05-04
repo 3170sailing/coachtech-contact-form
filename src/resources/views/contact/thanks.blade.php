@@ -1,0 +1,9 @@
+@extends('layouts.app')
+
+@section('content')
+
+<h2>お問い合わせありがとうございました</h2>
+
+<a href="/">トップへ戻る</a>
+
+@endsection

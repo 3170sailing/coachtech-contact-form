@@ -1,0 +1,55 @@
+.confirm__content {
+    max-width: 800px;
+    margin: 60px auto;
+    padding: 40px 30px;
+    background: #fff;
+    border-radius: 4px;
+}
+
+.confirm__heading {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.confirm__heading h2 {
+    font-size: 24px;
+}
+
+.confirm__table table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.confirm__table th {
+    width: 30%;
+    padding: 15px;
+    background: #f5f5f5;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+.confirm__table td {
+    padding: 15px;
+    border: 1px solid #ddd;
+}
+
+.confirm__button {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.confirm__button button {
+    padding: 10px 40px;
+    margin: 0 10px;
+    border: none;
+    cursor: pointer;
+}
+
+.confirm__button button[type="submit"] {
+    background: #000;
+    color: #fff;
+}
+
+.confirm__button button:hover {
+    opacity: 0.8;
+}
