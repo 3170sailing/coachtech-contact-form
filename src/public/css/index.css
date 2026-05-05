@@ -43,7 +43,8 @@ body {
 }
 
 .form__input {
-    flex: none;
+    display: flex;
+    flex-direction: column;
     width: 500px;
 }
 
@@ -67,7 +68,7 @@ body {
 
 .form__input--name {
     display: flex;
-    gap: 20px;
+    justify-content: space-between;
     width: 500px;
 }
 
@@ -165,7 +166,9 @@ body {
 }
 
 .form__error-message {
-    margin: 0;
+    color: red;
+    font-size: 12px;
+    margin-top: 4px;
 }
 
 input:focus,
@@ -177,4 +180,70 @@ textarea:focus {
 input::placeholder,
 textarea::placeholder {
     color: #beb1a6;
+}
+
+.form p.form__error-message {
+    color: #ff0000 !important;
+}
+
+.form__input--name {
+    display: flex;
+    gap: 80px;
+    width: 500px;
+}
+
+.form__input--name>div {
+    width: 235px;
+}
+
+.form__input--name input {
+    width: 100%;
+}
+
+.form__input--tel {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 500px;
+    gap: 0;
+}
+
+.form__input--tel>div {
+    width: 120px;
+}
+
+.form__input--tel input {
+    width: 100%;
+    text-align: center;
+}
+
+.form__input--tel span {
+    width: 20px;
+    text-align: center;
+    color: #8b7969;
+    font-size: 16px;
+}
+
+.form__input .form__input--radio {
+    width: 100%;
+}
+
+.form__input--radio {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.form__input--radio label {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.form__input--radio input[type="radio"] {
+    width: 18px;
+    height: 18px;
+    accent-color: #8b7969;
 }

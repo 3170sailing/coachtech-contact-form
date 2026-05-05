@@ -15,12 +15,31 @@
             <a class="header__logo" href="/">
                 FashionablyLate
             </a>
+
+            @guest
+                @unless (request()->is('/') || request()->is('confirm'))
+                    @if (request()->is('login'))
+                        <a class="header__link" href="{{ route('register') }}">register</a>
+                    @else
+                        <a class="header__link" href="{{ route('login') }}">login</a>
+                    @endif
+                @endif
+            @endguest
+
+            @auth
+                <form action="/logout" method="post">
+                    @csrf
+                    <button class="header__button">logout</button>
+                </form>
+            @endauth
         </div>
     </header>
 
     <main>
         @yield('content')
     </main>
+
+    @yield('script')
 </body>
 
 </html>

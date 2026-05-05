@@ -24,11 +24,15 @@ class ContactController extends Controller
         'last_name',
         'gender',
         'email',
-        'tel',
+        'tel1',
+        'tel2',
+        'tel3',
         'address',
         'building',
         'detail',
     ]);
+
+    $contact['tel'] = $contact['tel1'] . $contact['tel2'] . $contact['tel3'];
 
     $category = Category::find($contact['category_id']);
 
