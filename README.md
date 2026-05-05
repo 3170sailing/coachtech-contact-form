@@ -15,13 +15,13 @@ coachtech お問い合わせフォーム
 1. プロジェクトをクローン
 
 ```bash
-git clone git@github.com:3170sailing/contact-form2.git
+git clone git@github.com:3170sailing/coachtech-contact-form.git
 ```
 
 2. プロジェクトへ移動
 
 ```bash
-cd contact-form2
+cd coachtech-contact-form
 ```
 
 3. Dockerのビルド＆起動
