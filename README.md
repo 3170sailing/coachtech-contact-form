@@ -3,8 +3,11 @@ coachtech お問い合わせフォーム
 
 ## アプリ概要
 本アプリは、お問い合わせフォームと管理機能を備えたWebアプリです。
+
 ユーザーはお問い合わせフォームから名前・性別・メールアドレス・電話番号・住所・お問い合わせ内容などを送信できます。
+
 管理者はログイン機能を利用して管理画面へアクセスし、登録されたお問い合わせ情報の一覧表示・検索・詳細確認・削除を行うことができます。
+
 また、検索条件に応じたお問い合わせデータをCSV形式でエクスポートする機能も実装しています。
 
 ## 環境構築
@@ -39,7 +42,7 @@ docker compose exec php bash
 composer install
 ```
 
-6. .env作成
+6. .envファイル作成
 
 ```bash
 cp .env.example .env
@@ -128,5 +131,9 @@ php artisan db:seed
 | created_at | timestamp |  |  |  |  |
 | updated_at | timestamp |  |  |  |  |
 
-##　 URL
-環境開発：https://github.com/3170sailing/contact-form2.git
+## URL
+環境開発：https://github.com/3170sailing/coachtech-contact-form.git
+お問い合わせ画面：http://localhost/
+ユーザー登録画面：http://localhost/register
+ログイン画面：http://localhost/login
+phpMyAdmin：http://localhost:8080/
