@@ -47,7 +47,9 @@
     </form>
 
     <div class="admin__sub">
-        <a href="#" class="admin__export">エクスポート</a>
+        <a href="{{ url('/export?' . http_build_query(request()->query())) }}" class="admin__export">
+            エクスポート
+        </a>
 
         <div class="pagination">
 
