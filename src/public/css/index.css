@@ -29,7 +29,7 @@ body {
 
 .form__group {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     margin-bottom: 30px;
 }
 
@@ -68,18 +68,23 @@ body {
 
 .form__input--name {
     display: flex;
-    justify-content: space-between;
+    gap: 80px;
     width: 500px;
 }
 
+.form__input--name>div {
+    width: 235px;
+}
+
 .form__input--name input {
-    width: calc((100% - 20px) / 2);
+    width: 100%;
 }
 
 .form__input--radio {
     display: flex;
+    align-items: center;
     gap: 40px;
-    width: 500px;
+    width: 100%;
     font-size: 16px;
 }
 
@@ -87,22 +92,40 @@ body {
     display: flex;
     align-items: center;
     gap: 8px;
+    font-size: 16px;
+    cursor: pointer;
 }
 
-.form__input--radio input {
+.form__input--radio input[type="radio"] {
+    width: 18px;
+    height: 18px;
     accent-color: #8b7969;
 }
 
 .form__input--tel {
     display: flex;
-    align-items: center;
-    gap: 20px;
+    align-items: flex-start;
+    justify-content: space-between;
     width: 500px;
+    gap: 0;
+}
+
+.form__input--tel>div {
+    width: 120px;
 }
 
 .form__input--tel input {
-    width: calc((100% - 40px) / 3);
+    width: 100%;
     text-align: center;
+}
+
+.form__input--tel span {
+    width: 20px;
+    height: 38px;
+    line-height: 38px;
+    text-align: center;
+    color: #8b7969;
+    font-size: 16px;
 }
 
 .form__input--select {
@@ -123,7 +146,7 @@ body {
 .form__input--select::after {
     content: "";
     position: absolute;
-    top: 50%;
+    top: 19px;
     left: calc(60% - 20px);
     transform: translateY(-50%);
     border-top: 8px solid #beb1a6;
@@ -136,6 +159,12 @@ body {
     height: 120px;
     padding: 15px 20px;
     resize: none;
+}
+
+.form__error-message {
+    color: #ff0000 !important;
+    font-size: 12px;
+    margin-top: 4px;
 }
 
 .form__button {
@@ -157,20 +186,6 @@ body {
     opacity: 0.8;
 }
 
-.form__error {
-    width: 760px;
-    margin: 0 auto 20px;
-    padding: 10px;
-    background: #f8d7da;
-    color: #842029;
-}
-
-.form__error-message {
-    color: red;
-    font-size: 12px;
-    margin-top: 4px;
-}
-
 input:focus,
 select:focus,
 textarea:focus {
@@ -180,70 +195,4 @@ textarea:focus {
 input::placeholder,
 textarea::placeholder {
     color: #beb1a6;
-}
-
-.form p.form__error-message {
-    color: #ff0000 !important;
-}
-
-.form__input--name {
-    display: flex;
-    gap: 80px;
-    width: 500px;
-}
-
-.form__input--name>div {
-    width: 235px;
-}
-
-.form__input--name input {
-    width: 100%;
-}
-
-.form__input--tel {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 500px;
-    gap: 0;
-}
-
-.form__input--tel>div {
-    width: 120px;
-}
-
-.form__input--tel input {
-    width: 100%;
-    text-align: center;
-}
-
-.form__input--tel span {
-    width: 20px;
-    text-align: center;
-    color: #8b7969;
-    font-size: 16px;
-}
-
-.form__input .form__input--radio {
-    width: 100%;
-}
-
-.form__input--radio {
-    display: flex;
-    align-items: center;
-    gap: 40px;
-}
-
-.form__input--radio label {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    font-size: 16px;
-    cursor: pointer;
-}
-
-.form__input--radio input[type="radio"] {
-    width: 18px;
-    height: 18px;
-    accent-color: #8b7969;
 }

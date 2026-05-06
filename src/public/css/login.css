@@ -50,6 +50,12 @@ body {
     color: #8b7969;
 }
 
+.form__error-message {
+    color: #ff0000 !important;
+    font-size: 12px;
+    margin-top: 6px;
+}
+
 .form__button {
     margin-top: 70px;
     text-align: center;
@@ -63,18 +69,6 @@ body {
     color: #fff;
     font-size: 18px;
     cursor: pointer;
-}
-
-.form__error {
-    width: 560px;
-    margin: 0 auto 20px;
-    color: #ff6b6b;
-}
-
-.form__error-message {
-    color: #ff0000 !important;
-    font-size: 12px;
-    margin-top: 6px;
 }
 
 input::placeholder {
