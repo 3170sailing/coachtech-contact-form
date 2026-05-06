@@ -133,7 +133,11 @@ php artisan db:seed
 
 ## URL
 環境開発：https://github.com/3170sailing/coachtech-contact-form.git
+
 お問い合わせ画面：http://localhost/
+
 ユーザー登録画面：http://localhost/register
+
 ログイン画面：http://localhost/login
+
 phpMyAdmin：http://localhost:8080/
