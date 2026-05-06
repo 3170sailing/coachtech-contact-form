@@ -76,9 +76,15 @@ php artisan db:seed
 
 ## 使用技術
 - Laravel 8.83.8
+- Laravel Fortify
 - PHP 8.1
+- nginx 1.21.1
+- Docker 29.1.3
+- Docker Compose v2.40.3
 - MySQL 8.0
-- Docker
+- HTML
+- CSS
+- JavaScript
 
 ## ER図
 ![alt](ER.png)
