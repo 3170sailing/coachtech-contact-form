@@ -58,7 +58,7 @@ class ContactController extends Controller
 
     public function correction(Request $request)
     {
-        return redirect('/')->withInput();
+        return redirect('/')->withInput($request->all());
     }
 
     public function thanks()
