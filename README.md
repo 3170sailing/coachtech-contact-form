@@ -123,12 +123,12 @@ php artisan db:seed
 | created_at | timestamp |  |  |  |  |
 | updated_at | timestamp |  |  |  |  |
 
-### categoriesテーブル
+### categoriesテーブル（お問い合わせの種類の選択肢）
 
 | カラム名 | 型 | PRIMARY KEY | NOT NULL | FOREIGN KEY | 補足 |
 | --- | --- | --- | --- | --- | --- |
 | id | bigint unsigned | ○ | ○ |  |  |
-| content | varchar(255) |  | ○ |  | お問い合わせの種類 |
+| content | varchar(255) |  | ○ |  |  |
 | created_at | timestamp |  |  |  |  |
 | updated_at | timestamp |  |  |  |  |
 
@@ -145,12 +145,8 @@ php artisan db:seed
 
 ## URL
 
-環境開発：https://github.com/3170sailing/coachtech-contact-form.git
-
-お問い合わせ画面：http://localhost/
-
-ユーザー登録画面：http://localhost/register
-
-ログイン画面：http://localhost/login
-
-phpMyAdmin：http://localhost:8080/
+- 環境開発：https://github.com/3170sailing/coachtech-contact-form.git
+- お問い合わせ画面：http://localhost/
+- ユーザー登録画面：http://localhost/register
+- ログイン画面：http://localhost/login
+- phpMyAdmin：http://localhost:8080/
