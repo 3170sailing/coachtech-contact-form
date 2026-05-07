@@ -56,6 +56,11 @@ class ContactController extends Controller
         return redirect('/thanks');
     }
 
+    public function correction(Request $request)
+    {
+        return redirect('/')->withInput();
+    }
+
     public function thanks()
     {
         return view('contact.thanks');

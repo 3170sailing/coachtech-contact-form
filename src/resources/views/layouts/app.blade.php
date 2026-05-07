@@ -27,9 +27,10 @@
             @endguest
 
             @auth
-                <form action="/logout" method="post">
+                <form method="POST" action="{{ route('logout') }}">
                     @csrf
-                    <button class="header__button">logout</button>
+
+                    <button class="header__button" type="submit">logout</button>
                 </form>
             @endauth
         </div>

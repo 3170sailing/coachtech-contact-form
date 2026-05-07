@@ -75,8 +75,17 @@
         @endforeach
 
         <div class="confirm__button">
-            <button class="confirm__button-submit" type="submit">送信</button>
-            <button class="confirm__button-correction" type="submit" name="back" value="back" formaction="/">修正</button>
+            <button class="confirm__button-submit" type="submit">
+                送信
+            </button>
+
+            <button
+                class="confirm__button-correction"
+                type="submit"
+                formaction="/contacts/correction"
+                formmethod="post">
+                修正
+            </button>
         </div>
     </form>
 </div>

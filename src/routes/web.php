@@ -15,3 +15,4 @@ Route::get('/admin/search', [AdminController::class, 'search']);
 Route::delete('/admin/delete', [AdminController::class, 'destroy']);
 Route::post('/login', [LoginController::class, 'login']);
 Route::get('/export', [AdminController::class, 'export'])->middleware('auth');
+Route::post('/contacts/correction', [ContactController::class, 'correction']);

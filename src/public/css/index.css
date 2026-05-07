@@ -58,6 +58,7 @@ body {
     border: none;
     background: #f4f4f4;
     color: #8b7969;
+    box-sizing: border-box;
 }
 
 .form__input input,
@@ -103,15 +104,11 @@ body {
 }
 
 .form__input--tel {
-    display: flex;
-    align-items: flex-start;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 1fr 20px 1fr 20px 1fr;
+    column-gap: 12px;
+    align-items: start;
     width: 500px;
-    gap: 0;
-}
-
-.form__input--tel>div {
-    width: 120px;
 }
 
 .form__input--tel input {
@@ -120,7 +117,6 @@ body {
 }
 
 .form__input--tel span {
-    width: 20px;
     height: 38px;
     line-height: 38px;
     text-align: center;
